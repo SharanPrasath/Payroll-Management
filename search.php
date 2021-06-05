@@ -90,9 +90,10 @@ $sql = "SELECT * FROM `pay` where `id`='$empid'";
                 <tr>
                     <th class="text-center">Name</th>
                     <th class="text-center">Email</th>
-                    <th class="text-center">Phone Number</th>
-                    <th class="text-center">Employee Id</th>
-                    <th class="text center">Bonus Amount</th>
+                    <th class="text-center">PhoneNo</th>
+                    <th class="text-center">EmployeeId</th>
+                    <th class="text center">BonusAmount</th>
+                    <th class="text-center">Salary status</th>
                     <th class="text-center">Pay Employee</th>
                     <th class="text-center">Delete</th>
                     <th class="text-center">Update</th>
@@ -110,6 +111,7 @@ $sql = "SELECT * FROM `pay` where `id`='$empid'";
                     <td class="py-2"><?php echo $rows['phone'] ?></td>
                     <td class="py-2"><?php echo $rows['id'] ?></td>
                     <td class="py-2"><?php echo $rows['bonus'] ?></td>
+                    <td class="py-2"><?php echo rand(0,1) ?></td>
                     <td class="py-2"><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HBOS1rDnKxBtCo" async> </script> </form></td>
                     <td class="py-2"><a href="delete.php?id=<?php echo $rows['id']; ?>"><button class="btn btn-outline-danger">Delete</button></a></td>
                     <td class="py-2"><a href="update.php?id=<?php echo $rows['id']; ?>"><button class="btn btn-outline-danger">Update</button></a></td>
